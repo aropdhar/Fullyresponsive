@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Nunito Sans', sans-serif;
+    outline: none;
+    transition: 0.3s linear;
+}
+
+body{
+
+    background: hsla(0, 10%, 96%, 0.868);
+}
+
+html{
+
+    font-size: 62%;
+    scroll-behavior: smooth;
+}
+
+header{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+    position: fixed;
+    background: #fff;
+    padding: 15px 9%;
+    z-index: 1000;
+}
+
+header .logo{
+
+    font-size: 30px;
+    color: #000;
+}
+
+header .logo span{
+
+    color: orange;
+}
+
+header li{
+
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header li::after{
+
+    content: ' ';
+    width: 0;
+    height: 2px;
+    background: #fac404;
+    display: block;
+    position: relative;
+}
+
+header li:hover::after{
+
+    width: 100%;
+    transition: 0.3s;
+}
+
+header li a{
+
+    font-size: 22px;
+    color: #000;
+    transition: 0.5s;
+
+}
+
+
+.icons{
+
+    background: #fac404;
+    padding: 10px 15px;
+    border-radius: 50px;
+}
+
+.icons i{
+
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+.navbar.active{
+
+    right: 0;
+}
+#menubar{
+
+    display: none;
+}
+
+/*   home section   */
+
+
+.home_main{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0 9%;
+    padding-top: 5rem;
+}
+
+.home_text{
+
+    flex: 1 1 50rem;
+    
+}
+
+
+
+.home_text h1{
+
+    font-size: 45px;
+    line-height: 65px;
+    margin-bottom: 20px;
+}
+
+.home_text h1 span{
+
+    color: #fac404;
+}
+
+.home_text p{
+
+    width: 70%;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+.image{
+
+    flex: 1 1 40rem;
+}
+
+.image img{
+
+    width: 100%;
+}
+
+
+
+
+.btn{
+
+    background: #fac404;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 50rem;
+    transition: .38s linear;
+}
+
+.btn:hover{
+
+    letter-spacing: 1px;
+}
+
+
+/*   breakfast section    */
+
+.breakfast{
+
+    padding:50px ;
+    padding-top: 150px;
+}
+.breakfast_headings{
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+.breakfast_headings h1{
+
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.breakfast_headings p{
+
+    font-size: 12px;
+    margin-bottom: 5rem;
+}
+
+.breakfast_main{
+
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+}
+
+.breakfast_card{
+
+    width: 300px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: .38s linear;
+}
+
+.breakfast_card:hover{
+
+    transform: translateX(20px);
+}
+
+.breakfast_card .breakfast_img img{
+
+    width: 75px;
+    margin-right: 12px;
+}
+
+
+.breakfast_text p{
+
+    font-size: 13px;
+}
+
+
+
+
+/*     about section     */
+
+.about_main{
+
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about_img img{
+
+    width: 100%;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate{
+
+    0%{
+
+        transform: rotate(360deg);
+    }
+}
+
+.about_text{
+
+    flex: 1 1 30rem;
+}
+
+.about_text h1{
+
+    font-size: 35px;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+
+.about_text p{
+
+    width: 85%;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+/*    menu section    */
+
+.menu{
+
+    padding: 50px 0;
+}
+.menu_des{
+
+    width: 80%;
+    margin: 40px auto;
+}
+
+.menu_des h1{
+
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.menu_des p{
+
+    font-size: 16px;
+    color: rgba(0,0,0,0.5);
+}
+.menu_main{
+
+    width: 82%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4.5rem;
+}
+
+.menu_card{
+
+    height: 350px;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 10px 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.menu_img{
+
+    background: #000;
+    border-radius: 10px;
+}
+
+.menu_main .menu_img img{
+
+    width: 250px;
+    height: 240px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.menu_card:hover .menu_img img{
+
+    opacity: 0.4;
+}
+.menu_title{
+
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.menu_title h3{
+
+    color: orange;
+}
+
+.menu_text p{
+
+    margin-bottom: 8px;
+}
+
+.menu_text .menu_star i{
+
+    font-size: 15px;
+    color: orange;
+}
+
+.menu_img_text{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 8rem;
+
+}
+
+.menu_img_text .add{
+
+    color: #000;
+    font-size: 12px;
+    text-transform: initial;
+    margin-bottom:10px;
+    background: #fac404;
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+
+.menu_card:hover .add{
+
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+.menu_img_text .info{
+
+    color: #000;
+    font-size: 12px;
+    text-transform: initial;
+    margin-bottom:10px;
+    background: #fac404;
+    padding: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+
+.menu_card:hover .info{
+
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+
+
+/*     contact section     */
+
+.contact{
+
+    padding: 30px 0;
+}
+
+.copyright{
+
+    width: 82%;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.copyright span{
+
+    margin-left: 8px;
+    color: #fac404;
+    margin-right: 8px;
+}
+
+.contact_main{
+
+    width: 82%;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.contact_card{
+
+    flex: 1 1 25rem;
+    display: flex;
+    flex-flow: column;
+    margin: 10px 20px;
+}
+
+.contact_card h1{
+
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+
+.contact_card a{
+
+    margin: 8px;
+    font-size: 16px;
+    color: #000;
+    transition: 0.3s;
+}
+
+.contact_card a:hover{
+
+    transform: translateX(10px);
+    color: #fac404;
+}
+
+
+
+
+
+
+
+/*   top scroll section   */
+
+.top_scroll{
+
+    position: absolute;
+    right: 4%;
+    bottom: 4%;
+    border: 4px solid #750cf5;
+    position: fixed;
+    background: #fac404;
+    padding: 8px 12px;
+    border-radius: 5rem;
+    box-shadow: 0 0 15px rgba(137, 4, 232, 0.1);
+}
+
+.top_scroll i{
+
+    font-size: 16px;
+    color: #fff;
+}
+
+
+/*    media query   */
+
+
+@media(max-width:991px){
+
+    header{
+
+        padding: 20px;
+    }
+}
+
+
+@media(max-width:768px){
+
+
+    #menubar{
+
+        display: block;
+    }
+    
+    .navbar{
+
+        position: absolute;
+        width: 80%;
+        height: 110vh;
+        right: -120%;
+        top: 100%;
+        background: #eee;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+    }
+
+    .navbar li{
+
+        background: #fff;
+        margin: 15px;
+        padding: 15px;
+        text-align: center;
+        border: 1px solid #000;
+        border-radius: 10px;
+    }
+    
+    .navbar li a:hover{
+
+        color: #fff;
+    }
+    .navbar li:hover{
+
+        background: linear-gradient(to right,#fac404,#5d0dfd);
+    }
+
+    .navbar li::after{
+
+        display: none;
+    }
+
+  
+}
+
+@media(max-width:800px){
+    
+    .icons{
+
+        display: flex;
+    }
+
+    .icons i{
+
+        margin: 0 10px;
+    }
+
+    .home_text{
+
+        padding: 4rem 0;
+    }
+
+    
+    .home_text h1{
+
+        font-size: 25px;
+    }
+    
+    .breakfast_card .breakfast_img img{
+
+        width: 40px;
+    }
+
+    .icons{
+
+        margin-left: 10px;
+    }
+
+    .icons i{
+
+        font-size: 15px;
+    }
+   
+    .about_text h1{
+
+        font-size: 25px;
+    }
+
+    .menu h1{
+
+        font-size: 22px;
+    }
+
+    .menu_card{
+
+        margin-right: 25px;
+    }
+
+    .breakfast_card{
+
+        width: 320px;
+    }
+
+    header .logo{
+
+        font-size: 22px;
+    }
+}
